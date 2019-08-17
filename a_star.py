@@ -1,7 +1,7 @@
 import heapq
 from PIL import Image, ImageDraw
 
-BOARD       = "boards/board-2-2.txt"
+BOARD       = "boards/board-1-4.txt"
 
 B_WALKABLE  = "."
 B_WALL      = "#"
@@ -94,6 +94,7 @@ def drawSolution(array, node):
         node = node.parent
     
     img.show()
+    img.save("test.png")
 
 # Check if a position is inside the board
 def positionInsideArray(array, x, y):
