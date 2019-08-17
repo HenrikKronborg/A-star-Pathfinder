@@ -1,8 +1,21 @@
 # A* Pathfinder
-## Requirements
+## The solution
+### Grids with Obstacles
+Finds the shortest paths in grids with obstacles. The algorithm searches from the start cell *(green)* to the goal cell *(red*).
+
+![The result for Problem 1](img/result_problem-1.png)
+
+### Grids with Different Cell Costs
+The squares on the board have different costs, symbolizing the time it takes to pass different types of landscapes like mountains and forests. Crossing a mountain takes longer time than crossing grass, meaning a mountain has a higher cost.
+
+The algorithm finds the path with the lowest cost.
+
+![The result for Problem 2](img/result_problem-2.png)
+
+## How to run
+### Requirements
 The package `pillow` has to be installed.
 
-## How to run the algorithms
 ### A*
 1. Run a_star.py
 
